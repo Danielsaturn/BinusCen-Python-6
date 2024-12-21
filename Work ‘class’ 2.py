@@ -50,5 +50,13 @@ while (True):
         
     elif(user_menu == "3"):
         
+        user_change = input("Please enter if you desire to change name (name) or grade (grade): ")
+        student1 = student()
+        
+        if(user_change == "name"):
+            user_name = input("Please enter the changed name: ")
+            student1.setstudent(user_name, user_grade)
+            student1.printstudent
+        
     else:
         print("Please enter the correct number provided in the menu")
