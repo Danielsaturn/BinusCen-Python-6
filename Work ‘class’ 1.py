@@ -29,5 +29,8 @@ class student:
 
 student1 = student()
 
-student1.setstudent("Azhar", 5000)
+user_name = input("Please enter your name: ")
+user_grade = input("Please enter your grade: ")
+
+student1.setstudent(user_name, user_grade)
 student1.printstudent()
