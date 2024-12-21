@@ -37,14 +37,14 @@ while (True):
     5. Exit Program """)
     user_menu = input("Please enter a number based on the menu above: ")
         
-    if(user_menu == 1):
+    if(user_menu == "1"):
         
         user_name = input("Please enter your name: ")
         user_grade = input("Please enter your grade: ")
         student1.setstudent(user_name, user_grade)
         student1.printstudent()
         
-    elif(user_menu == 2):
+    elif(user_menu == "2"):
         
         student1.printstudent()
         student1.displayCount()
