@@ -1,3 +1,5 @@
+import os
+
 class student:
     "Common base class for all student"
     stucount = 0
@@ -57,6 +59,26 @@ while (True):
             user_name = input("Please enter the changed name: ")
             student1.setstudent(user_name, user_grade)
             student1.printstudent
+        elif(user_change == "grade"):
+            user_grade = input("Please enter the changed grade: ")
+            student1.setstudent(user_name, user_grade)
+            student1.printstudent
+        else:
+            print("Please enter the correct to change the grade or name!")
+        
+    elif(user_menu == "4"):
+        
+        user_name = "none"
+        user_grade = "none"
+        student1 = student()
+        student1.setstudent(user_name, user_grade)
+        student1.printstudent()
+        
+    elif(user_menu == "5"):
+        
+        print("This code has stopped, thank you for choosing Dan's name and grade recorder<3")
+        break
         
     else:
         print("Please enter the correct number provided in the menu")
+        
