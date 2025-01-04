@@ -1,16 +1,9 @@
-import os
-
 class student:
     "Common base class for all student"
-    stucount = 0
     
     def __init__(self, name="student", grade=1):
         self.name = name
         self.grade = grade
-        student.stucount += 1
-        
-    def displayCount(self):
-        print("Total Student: %d" % student.stucount)
     
     def printstudent(self):
         print("Name:", self.name, "\nGrade:", self.grade)
@@ -48,7 +41,6 @@ while (True):
     elif(user_menu == "2"):
         
         student1.printstudent()
-        student1.displayCount()
         
     elif(user_menu == "3"):
         
@@ -81,4 +73,3 @@ while (True):
         
     else:
         print("Please enter the correct number provided in the menu")
-        
